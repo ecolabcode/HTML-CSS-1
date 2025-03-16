@@ -1,0 +1,21 @@
+{
+  "name": "cocina-italiana",
+  "version": "1.0.0",
+  "description": "A website about Italian cuisine.",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "Alejandro Mezza Sainz",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.0.0",
+    "sass": "^1.32.0"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "normalize.css": "^8.0.1"
+  }
+}
