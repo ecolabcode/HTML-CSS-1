@@ -2,8 +2,14 @@ document.addEventListener('DOMContentLoaded', function() {
   // Navigation Menu Toggle
   let navToggle = document.querySelector('.nav-toggle');
   let navMenu = document.querySelector('.nav-menu');
+  let arrow = document.querySelector('.arrow');
   navToggle.addEventListener('click', function() {
     navMenu.classList.toggle('nav-menu-active');
+    if (navMenu.classList.contains('nav-menu-active')) {
+      arrow.innerHTML = '&#x25B2;'; // Upward arrow
+    } else {
+      arrow.innerHTML = '&#x25BC;'; // Downward arrow
+    }
   });
 
   // Keyboard Accessibility for Navigation Links
