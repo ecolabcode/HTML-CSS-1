@@ -1,24 +1,40 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var navToggle = document.querySelector('.nav-toggle');
-  var navMenu = document.querySelector('.nav-menu');
-
+  // Navigation Menu Toggle
+  let navToggle = document.querySelector('.nav-toggle');
+  let navMenu = document.querySelector('.nav-menu');
   navToggle.addEventListener('click', function() {
     navMenu.classList.toggle('nav-menu-active');
   });
 
-  var navLinks = document.querySelectorAll('nav ul li a');
+  // Keyboard Accessibility for Navigation Links
+  let navLinks = document.querySelectorAll('nav ul li a');
   navLinks.forEach(function(link) {
     link.addEventListener('focus', function() {
-      link.style.outline = '2px solid #ff0';  // Resaltar el foco del teclado
+      link.style.outline = '2px solid #ff0';
     });
     link.addEventListener('blur', function() {
       link.style.outline = 'none';
     });
   });
 
-  var videos = document.querySelectorAll('video');
+  // Keyboard Accessibility for Videos
+  let videos = document.querySelectorAll('video');
   videos.forEach(function(video) {
-    video.setAttribute('tabindex', '0');  // Hacer que los videos sean accesibles por teclado
+    video.setAttribute('tabindex', '0');
+  });
+
+  // Reservation Form Handling
+  let reservationForm = document.getElementById('reservation-form');
+  let reservationMessage = document.getElementById('reservation-message');
+  reservationForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let date = document.getElementById('date').value;
+    let time = document.getElementById('time').value;
+    let guests = document.getElementById('guests').value;
+    reservationMessage.textContent = `Gracias, ${name}. Tu reserva para ${guests} personas el ${date} a las ${time} ha sido confirmada. Se ha enviado un correo de confirmación a ${email}.`;
+    reservationMessage.classList.remove('hidden');
+    reservationForm.reset();
   });
 });
-

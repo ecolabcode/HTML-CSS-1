@@ -27,6 +27,28 @@
         <h2 class="animate__animated animate__fadeInUp">Descubre lo mejor de la cocina italiana</h2>
         <p>Explora recetas, restaurantes y eventos relacionados con la gastronomía italiana.</p>
     </section>
+    <section class="reservation-section">
+        <h2>Haz una Reserva</h2>
+        <form id="reservation-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Fecha:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Hora:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Número de Personas:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+
+            <button type="submit">Reservar</button>
+        </form>
+        <p id="reservation-message" class="hidden"></p>
+    </section>
 </main>
 <footer>
     <p>&copy; 2025 Cocina Italiana</p>
@@ -35,5 +57,3 @@
 <script src="../js/main.js"></script>
 </body>
 </html>
-
-
