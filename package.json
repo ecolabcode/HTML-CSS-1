@@ -12,9 +12,10 @@
   "license": "ISC",
   "devDependencies": {
     "@parcel/watcher": "^2.5.1",
+    "@swc/core": "^1.2.173",
+    "lightningcss": "^1.29.3",
     "parcel": "^2.0.0",
-    "sass": "^1.32.0",
-    "@swc/core": "^1.2.173"
+    "sass": "^1.32.0"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
