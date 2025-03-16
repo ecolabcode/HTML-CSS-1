@@ -8,7 +8,7 @@
     "build": "parcel build src/index.html"
   },
   "keywords": [],
-  "author": "Alejandro Mezza Sainz",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@parcel/watcher": "^2.5.1",
