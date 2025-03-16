@@ -8,16 +8,19 @@
     "build": "parcel build src/index.html"
   },
   "keywords": [],
-  "author": "",
+  "author": "Alejandro Mezza Sainz",
   "license": "ISC",
   "devDependencies": {
     "@parcel/watcher": "^2.5.1",
-    "@swc/core": "^1.11.9",
     "parcel": "^2.0.0",
-    "sass": "^1.32.0"
+    "sass": "^1.32.0",
+    "@swc/core": "^1.2.173"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
     "normalize.css": "^8.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
