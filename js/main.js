@@ -39,7 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let date = document.getElementById('date').value;
     let time = document.getElementById('time').value;
     let guests = document.getElementById('guests').value;
-    reservationMessage.textContent = `Gracias, ${name}. Tu reserva para ${guests} personas el ${date} a las ${time} ha sido confirmada. Se ha enviado un correo de confirmación a ${email}.`;
+    reservationMessage.textContent = `Gracias, ${name}. Tu reserva para ${guests} personas el ${date} a las ${time} 
+    ha sido confirmada. Se ha enviado un correo de confirmación a ${email}.`;
     reservationMessage.classList.remove('hidden');
     reservationForm.reset();
   });

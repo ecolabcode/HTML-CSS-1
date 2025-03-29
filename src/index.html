@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favico.png" type="image/x-icon">
     <title>Cocina Italiana - Inicio</title>
     <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
@@ -12,7 +13,7 @@
 <header>
     <h1 class="animate__animated animate__fadeInDown">Bienvenidos a la Cocina Italiana</h1>
     <nav>
-        <button class="nav-toggle" aria-label="Abrir menú">
+        <button class="nav-toggle" aria-label="Abrir menú"> <!--toogle for responsive design-->
             <span class="arrow">&#x25BC;</span>
         </button>
         <ul class="nav-menu">
@@ -22,10 +23,23 @@
         </ul>
     </nav>
 </header>
-<main>
+<main id="main-content">
     <section>
         <h2 class="animate__animated animate__fadeInUp">Descubre lo mejor de la cocina italiana</h2>
         <p>Explora recetas, restaurantes y eventos relacionados con la gastronomía italiana.</p>
+    </section>
+    <section>
+        <h2 class="animate__animated animate__fadeInUp">Bienvenido a Cocina Italiana</h2>
+        <div class="svg-container">
+            <svg width="100" height="100" class="complex-animate-svg">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red">
+                    <animate attributeName="r" from="40" to="20" dur="0.5s" begin="mouseover" end="mouseout" fill="freeze" />
+                </circle>
+            </svg>
+        </div>
+        <div class="clip-path-container">
+            <img src="images/pasta.jpg" alt="Imagen de un plato de pasta" class="clip-path-img">
+        </div>
     </section>
     <section class="reservation-section">
         <h2>Haz una Reserva</h2>
@@ -49,6 +63,7 @@
         </form>
         <p id="reservation-message" class="hidden"></p>
     </section>
+    <a href="#main-content" class="skip-link">Saltar a contenido principal</a>
 </main>
 <footer>
     <p>&copy; 2025 Cocina Italiana</p>

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favico.png" type="image/x-icon">
   <title>Cocina Italiana - Detalle de Pasta</title>
   <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css">
@@ -22,25 +23,29 @@
     </ul>
   </nav>
 </header>
-<main>
+<main id="main-content">
   <section class="recipe-detail">
     <div class="recipe-header">
       <h2 class="animate__animated animate__fadeInUp">Receta de Pasta</h2>
-      <img src="../images/pasta.jpg" alt="Imagen de un plato de pasta grande">
+      <div class="carousel">
+        <div><img src="images/pasta-step1.jpg" alt="Imagen del primer paso para preparar pasta"></div>
+        <div><img src="images/pasta-step2.jpg" alt="Imagen del segundo paso para preparar pasta"></div>
+        <div><img src="images/pasta-step3.jpg" alt="Imagen del tercer paso para preparar pasta"></div>
+      </div>
       <p>La pasta es uno de los platos más tradicionales de Italia.</p>
     </div>
     <div class="recipe-steps">
       <h3>Instrucciones</h3>
       <div class="step">
-        <img src="../images/pasta-step1.jpg" alt="Imagen del primer paso para preparar pasta">
+        <img src="images/pasta-step1.jpg" alt="Imagen del primer paso para preparar pasta">
         <p>1. Hervir agua en una olla grande y añadir sal.</p>
       </div>
       <div class="step">
-        <img src="../images/pasta-step2.jpg" alt="Imagen del segundo paso para preparar pasta">
+        <img src="images/pasta-step2.jpg" alt="Imagen del segundo paso para preparar pasta">
         <p>2. Añadir la pasta a la olla y cocinar según las instrucciones del paquete.</p>
       </div>
       <div class="step">
-        <img src="../images/pasta-step3.jpg" alt="Imagen del tercer paso para preparar pasta">
+        <img src="images/pasta-step3.jpg" alt="Imagen del tercer paso para preparar pasta">
         <p>3. Escurrir la pasta y mezclar con la salsa de tu elección.</p>
       </div>
     </div>
@@ -51,6 +56,7 @@
       </video>
     </div>
   </section>
+  <a href="#main-content" class="skip-link">Saltar a contenido principal</a>
 </main>
 <footer>
   <p>&copy; 2025 Cocina Italiana</p>
