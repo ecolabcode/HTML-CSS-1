@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
-    "jquery": "^3.6.0",
+    "jquery": "^3.7.1",
     "normalize.css": "^8.0.1",
     "sharp": "^0.34.1"
   },
