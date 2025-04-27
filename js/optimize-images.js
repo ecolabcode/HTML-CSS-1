@@ -1,9 +1,7 @@
 let sharp = require('sharp');
 let fs = require('fs');
 let path = require('path');
-
-// Leer configuración desde sharp.config.json
-let config = JSON.parse(fs.readFileSync('sharp.config.json', 'utf8'));
+let config = require('./sharp.config.js'); // Importar configuración desde sharp.config.js
 
 let inputFolder = config.inputFolder;
 let outputFolder = config.outputFolder;
