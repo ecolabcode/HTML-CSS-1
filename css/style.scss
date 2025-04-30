@@ -198,43 +198,6 @@ p {
   bottom: 50px; /* Move it up when focused */
 }
 
-.complex-animate-svg {
-  animation: complexMoveSvg 5s infinite alternate;
-}
-
-@keyframes complexMoveSvg {
-  0% {
-    transform: translateX(0) translateY(0);
-    opacity: 1;
-    fill: red;
-    r: 40;
-  }
-  25% {
-    transform: translateX(50px) translateY(20px);
-    opacity: 0.8;
-    fill: orange;
-    r: 35;
-  }
-  50% {
-    transform: translateX(100px) translateY(40px);
-    opacity: 0.6;
-    fill: yellow;
-    r: 30;
-  }
-  75% {
-    transform: translateX(150px) translateY(60px);
-    opacity: 0.4;
-    fill: green;
-    r: 25;
-  }
-  100% {
-    transform: translateX(200px) translateY(80px);
-    opacity: 0.2;
-    fill: blue;
-    r: 20;
-  }
-}
-
 @media (max-width: 768px) {
   .nav-toggle {
     display: block;
