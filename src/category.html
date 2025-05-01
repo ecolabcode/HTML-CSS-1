@@ -29,7 +29,11 @@
     <ul class="recipe-list">
       <li>
         <a href="detail.html">
-          <img src="images/pasta.jpg" alt="Imagen de un plato de pasta">
+          <picture>
+            <source srcset="images/pasta-large.jpg" media="(min-width: 1200px)">
+            <source srcset="images/pasta-medium.jpg" media="(min-width: 768px)">
+            <img src="images/pasta-small.jpg" alt="Imagen de un plato de pasta">
+          </picture>
           <h3 class="animate__animated animate__fadeIn">Receta de Pasta</h3>
         </a>
       </li>
@@ -44,4 +48,3 @@
 <script src="../js/main.js"></script>
 </body>
 </html>
-

@@ -181,21 +181,61 @@ p {
 .clip-path-img {
   width: 100%;
   height: auto;
+  display: block; /* Ensuring the image is a block element */
   clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  transition: clip-path 0.5s ease-in-out; /* Smooth transition */
 }
 
 .skip-link {
   position: absolute;
+  bottom: 10px; /* Position it at the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
   background: #000;
   color: #fff;
   padding: 8px;
   z-index: 100;
   border-radius: 4px; /* Rounded corners */
   text-align: center; /* Center text */
+  transition: bottom 0.3s; /* Smooth transition */
+  text-decoration: none; /* Underline links */
+  display: inline-block; /* Make it behave like other links */
 }
 
 .skip-link:focus {
   bottom: 50px; /* Move it up when focused */
+}
+
+.complex-animate-svg {
+  animation: complexMoveSvg 5s infinite alternate;
+}
+
+@keyframes complexMoveSvg {
+  0% {
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+    fill: red;
+  }
+  25% {
+    transform: translateX(50px) translateY(20px);
+    opacity: 0.8;
+    fill: orange;
+  }
+  50% {
+    transform: translateX(100px) translateY(40px);
+    opacity: 0.6;
+    fill: yellow;
+  }
+  75% {
+    transform: translateX(150px) translateY(60px);
+    opacity: 0.4;
+    fill: green;
+  }
+  100% {
+    transform: translateX(200px) translateY(80px);
+    opacity: 0.2;
+    fill: blue;
+  }
 }
 
 @media (max-width: 768px) {
