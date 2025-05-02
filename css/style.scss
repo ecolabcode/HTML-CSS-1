@@ -188,53 +188,51 @@ p {
 
 .skip-link {
   position: absolute;
-  bottom: 10px; /* Position it at the bottom */
-  left: 50%; /* Center horizontally */
+  bottom: 10px;
+  left: 50%;
   transform: translateX(-50%); /* Center horizontally */
   background: #000;
   color: #fff;
   padding: 8px;
-  z-index: 100;
-  border-radius: 4px; /* Rounded corners */
-  text-align: center; /* Center text */
-  transition: bottom 0.3s; /* Smooth transition */
-  text-decoration: none; /* Underline links */
-  display: inline-block; /* Make it behave like other links */
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .skip-link:focus {
-  bottom: 50px; /* Move it up when focused */
+  bottom: 50px;
 }
 
-.complex-animate-svg {
-  animation: complexMoveSvg 5s infinite alternate;
+.animated-svg {
+  animation: complexMoveSvg 10s infinite alternate;
 }
 
 @keyframes complexMoveSvg {
   0% {
+    fill: red;
     transform: translateX(0) translateY(0);
     opacity: 1;
-    fill: red;
   }
   25% {
-    transform: translateX(50px) translateY(20px);
-    opacity: 0.8;
     fill: orange;
+    transform: translateX(500px) translateY(200px);
+    opacity: 0.8;
   }
   50% {
-    transform: translateX(100px) translateY(40px);
-    opacity: 0.6;
     fill: yellow;
+    transform: translateX(1000px) translateY(400px);
+    opacity: 0.6;
   }
   75% {
-    transform: translateX(150px) translateY(60px);
-    opacity: 0.4;
     fill: green;
+    transform: translateX(1500px) translateY(600px);
+    opacity: 0.4;
   }
   100% {
+    fill: blue;
     transform: translateX(200px) translateY(80px);
     opacity: 0.2;
-    fill: blue;
   }
 }
 

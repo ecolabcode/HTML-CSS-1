@@ -7,7 +7,7 @@ let inputFolder = config.inputFolder;
 let outputFolder = config.outputFolder;
 let resizeOptions = config.resizeOptions;
 
-// Crear la carpeta dist/images si no existe
+// carpeta dist/images
 if (!fs.existsSync(outputFolder)) {
     fs.mkdirSync(outputFolder, { recursive: true });
 }

@@ -32,7 +32,6 @@
         <h2 class="animate__animated animate__fadeInUp">Bienvenido a Cocina Italiana</h2>
         <div class="svg-container">
             <svg width="100" height="100" class="complex-animate-svg">
-                <!-- Definir clipping path -->
                 <defs>
                     <clipPath id="circleClip">
                         <circle cx="50" cy="50" r="40"></circle>
@@ -41,11 +40,15 @@
                         <circle cx="50" cy="50" r="40" fill="white"></circle>
                     </mask>
                 </defs>
-                <!-- Usar clipping path y mask -->
                 <rect width="100" height="100" fill="blue" clip-path="url(#circleClip)" mask="url(#circleMask)">
                     <animate attributeName="x" values="0;50;100;150;200" dur="5s" repeatCount="indefinite"></animate>
                     <animate attributeName="y" values="0;20;40;60;80" dur="5s" repeatCount="indefinite"></animate>
                 </rect>
+            </svg>
+        </div>
+        <div class="svg-container">
+            <svg width="100" height="100" class="animated-svg">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="cyan"></circle>
             </svg>
         </div>
         <div class="clip-path-container">
