@@ -32,7 +32,7 @@
           <picture>
             <source srcset="images/pasta-large.jpeg" media="(min-width: 1200px)">
             <source srcset="images/pasta-medium.jpeg" media="(min-width: 768px)">
-            <img src="images/pasta-small.jpeg" alt="Imagen de un plato de pasta">
+            <img src="images/pasta-small.jpeg" alt="Imagen de un plato de pasta" loading="lazy">
           </picture>
           <h3 class="animate__animated animate__fadeIn">Receta de Pasta</h3>
         </a>
@@ -44,7 +44,8 @@
 <footer>
   <p>&copy; 2025 Cocina Italiana</p>
 </footer>
-<script src="../js/polyfills.js"></script>
-<script src="../js/main.js"></script>
+<script src="../js/polyfills.js" async></script>
+<script src="../js/main.js" async></script>
 </body>
 </html>
+

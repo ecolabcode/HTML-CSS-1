@@ -66,13 +66,13 @@
                         <polygon points="150,0 0,300 300,300"></polygon>
                     </clipPath>
                 </defs>
-                <image href="images/pasta.jpg" width="300" height="300" clip-path="url(#triangleClip)"></image>
+                <image href="images/pasta.jpg" width="300" height="300" clip-path="url(#triangleClip)" loading="lazy"></image>
             </svg>
         </div>
 
         <!--imagen clipPath con scss -->
         <div class="clip-path-container">
-            <img src="images/pasta.jpg" alt="Imagen de un plato de pasta" class="clip-path-img">
+            <img src="images/pasta.jpg" alt="Imagen de un plato de pasta" class="clip-path-img" loading="lazy">
         </div>
 
     </section>
@@ -104,7 +104,7 @@
 <footer>
     <p>&copy; 2025 Cocina Italiana</p>
 </footer>
-<script src="../js/polyfills.js"></script>
-<script src="../js/main.js"></script>
+<script src="../js/polyfills.js" async></script>
+<script src="../js/main.js" async></script>
 </body>
 </html>
